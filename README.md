@@ -1,11 +1,11 @@
 
-# 📁 File System Simulator in C++
+# File System Simulator in C++
 
 A terminal-based File System Simulator written in C++ that mimics basic file system operations like creating/deleting files and folders, moving/copying items, viewing metadata, and persistent storage.
 
 ---
 
-## 🛠 Features
+## Features
 
 - Hierarchical Directory and File structure
 - File operations: Create, Read, Write, Rename, Delete, Append
@@ -19,7 +19,7 @@ A terminal-based File System Simulator written in C++ that mimics basic file sys
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -31,15 +31,15 @@ A terminal-based File System Simulator written in C++ that mimics basic file sys
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### 🔧 Compile
+### Compile
 
 ```bash
 g++ main.cpp filesystem.cpp -o filesystem
 ```
 
-### ▶️ Run
+### Run
 
 ```bash
 ./filesystem
@@ -47,9 +47,9 @@ g++ main.cpp filesystem.cpp -o filesystem
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
-### 🧷 Entry Point
+### Entry Point
 
 ```cpp
 int main() {
@@ -59,7 +59,7 @@ int main() {
 }
 ```
 
-### 🧠 Class Design
+### Class Design
 
 #### File
 ```cpp
@@ -91,9 +91,9 @@ public:
 
 ---
 
-## 📚 Core Functionalities
+## Core Functionalities
 
-### 📁 Directory Management
+### Directory Management
 
 #### Create Directory
 ```cpp
@@ -115,7 +115,7 @@ void FileSystem::deleteDirectoryByName(const std::string& name);
 void FileSystem::renameDirectory(const std::string& oldN, const std::string& newN);
 ```
 
-### 📄 File Management
+### File Management
 
 #### Create File
 ```cpp
@@ -142,7 +142,7 @@ void FileSystem::renameFile(const std::string& oldN, const std::string& newN);
 void FileSystem::deleteFileByName(const std::string& name);
 ```
 
-### 🔍 Search & Batch
+### Search & Batch
 
 #### Search Files
 ```cpp
@@ -154,7 +154,7 @@ void FileSystem::searchFiles(const std::string& pattern);
 void FileSystem::batchCreateFiles();
 ```
 
-### 📂 Move & Copy
+### Move & Copy
 
 #### Move File or Directory
 ```cpp
@@ -170,7 +170,7 @@ void FileSystem::copyDirectory(...);
 
 ---
 
-## 🌲 Tree View Display
+## Tree View Display
 
 ```cpp
 void FileSystem::printTree();
@@ -190,7 +190,7 @@ Example Output:
 
 ---
 
-## 💾 Data Persistence
+## Data Persistence
 
 - Automatically saves and restores from `fs_data.txt`.
 - Used on start and before exit.
@@ -202,7 +202,7 @@ void FileSystem::loadFromDisk(const std::string& filename);
 
 ---
 
-## 🧪 Sample CLI Output
+## Sample CLI Output
 
 ```
 ============= MAIN MENU =============
@@ -219,7 +219,7 @@ ENTER CHOICE:
 
 ---
 
-## ✅ Skills Demonstrated
+## Skills Demonstrated
 
 - **Object-Oriented Programming (OOP)**: Strong design using classes like `File`, `Directory`, and `FileSystem` to manage relationships and encapsulate behavior.
 - **C++ Standard Library (STL)**: Efficient use of `map`, `vector`, `queue`, `string`, and `sstream` to implement dynamic structures and CLI tools.
@@ -231,7 +231,7 @@ ENTER CHOICE:
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - **Trash & Restore System**: Soft-deletion with a `.trash` directory to allow file recovery.
 - **Multi-User Environment**: Add login and user-based separation for personalized file systems.
@@ -243,7 +243,7 @@ ENTER CHOICE:
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Sneh Ajudiya**  
 > IIT Hyderabad
